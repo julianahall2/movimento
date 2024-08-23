@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://c2wuqdgnqvc6g"]
+
+[ext_resource type="Script" path="res://principal.gd" id="1_wcchw"]
+[ext_resource type="Texture2D" uid="uid://b7rk4uai78tbg" path="res://icon.svg" id="2_0bf6l"]
+[ext_resource type="Script" path="res://character_body_2d.gd" id="2_ege0s"]
+
+[node name="Principal" type="Node2D"]
+script = ExtResource("1_wcchw")
+numero_magico = 8
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="."]
+script = ExtResource("2_ege0s")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
+texture = ExtResource("2_0bf6l")
